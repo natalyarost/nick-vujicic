@@ -132,9 +132,10 @@ section {
 .home .media-icons {
     z-index: 888;
     position: absolute;
-    right: 30px;
+    right: 50px;
     display: flex;
     flex-direction: column;
+    gap: 16px;
     transition: 0.5s ease;
 }
 
@@ -311,7 +312,42 @@ section {
     color: #fff;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1200px) {
+    header {
+        padding: 15px 100px;
+    }
+
+    section {
+        padding: 80px 100px;
+    }
+
+    .home .content h1 span {
+        font-size: .8em;
+    }
+
+    .home .media-icons a {
+        height: 30px;
+        width: 30px;
+    }
+
+    .about .about-content,
+    .family .family-content,
+    .book .book-content {
+        top: unset;
+        right: unset;
+        left: 0;
+        bottom: 10px;
+        max-width: 100%;
+    }
+
+    .about .about-content p,
+    .family .family-content p,
+    .book .book-content p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1024px) {
     header {
         width: 100%;
         padding: 12px 20px;
@@ -367,7 +403,7 @@ section {
     }
 
     .menu-btn {
-        background: url(../img/menu.png) no-repeat;
+        background: url(../icon/menu.png) no-repeat;
         background-size: 30px;
         background-position: center;
         background-color: #fff;
@@ -379,9 +415,73 @@ section {
 
     .menu-btn.active {
         z-index: 999;
-        background: url(../img/close.png) no-repeat;
+        background: url(../icon/close.png) no-repeat;
         background-size: 25px;
         background-position: center;
+        background-color: #fff;
         transition: 0.3s ease;
+    }
+
+    .about .about-content h2,
+    .family .family-content h2,
+    .book .book-content h2 {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        padding: 16px;
+    }
+
+    section {
+        padding: 16px;
+    }
+
+    .home .content {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .home .content h1 {
+        font-size: 1.4em;
+    }
+
+    .home .content p {
+        font-size: 1em;
+        margin-bottom: 65px;
+    }
+
+    .home .content a {
+        padding: 15px;
+        font-size: .8em;
+    }
+
+    .home .media-icons {
+        position: absolute;
+        top: 100px;
+        right: 40px;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .about .about-content,
+    .family .family-content {
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+
+    .about .about-content h2,
+    .family .family-content h2,
+    .book .book-content h2 {
+        font-size: 1.2em;
+    }
+
+    .about .about-content p,
+    .family .family-content p,
+    .book .book-content p {
+        font-size: 1em;
+        margin-bottom: 20px;
+        font-weight: 400;
     }
 }
