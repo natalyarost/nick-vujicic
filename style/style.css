@@ -207,7 +207,7 @@ section {
 }
 
 .about {
-    background-image: url(./img/Nik_Vujchich_seminar.jpg) no-repeat;
+    background: url(../img/Nik_Vujchich_seminar.jpg) no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -246,7 +246,7 @@ section {
 }
 
 .family {
-    background-image: url(./img/family.jpg) no-repeat;
+    background: url(../img/family.jpg) no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -265,7 +265,7 @@ section {
 }
 
 .book {
-    background-image: url(./img/buk.jpg) no-repeat;
+    background: url(../img/buk.jpg) no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -367,7 +367,7 @@ section {
     }
 
     .menu-btn {
-        background: url(/img/menu.png) no-repeat;
+        background: url(../img/menu.png) no-repeat;
         background-size: 30px;
         background-position: center;
         background-color: #fff;
@@ -379,7 +379,7 @@ section {
 
     .menu-btn.active {
         z-index: 999;
-        background: url(/img/close.png) no-repeat;
+        background: url(../img/close.png) no-repeat;
         background-size: 25px;
         background-position: center;
         transition: 0.3s ease;
